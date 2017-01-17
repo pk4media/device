@@ -1,4 +1,4 @@
-# device [![Build Status](https://secure.travis-ci.org/rguerreiro/device.png?branch=master)](http://travis-ci.org/rguerreiro/device) [![NPM version](https://badge.fury.io/js/device.svg)](http://badge.fury.io/js/device)
+# device [![NPM version](http://img.shields.io/npm/v/device.svg?style=flat)](https://npmjs.org/package/device) [![Downloads](https://img.shields.io/npm/dm/device.svg?style=flat)](https://npmjs.org/package/device) [![Build Status](https://secure.travis-ci.org/rguerreiro/device.png?branch=master)](http://travis-ci.org/rguerreiro/device)
 
 ## device
 
@@ -43,25 +43,37 @@ It accepts an object with only the config options you which to override (go [her
         <td>emptyUserAgentDeviceType</td>
         <td>string</td>
         <td>Device type to be returned whenever the has an empty user-agent. Defaults to desktop.</td>
-        <td>desktop, tv, tablet, phone, bot or car</td>
+        <td>desktop, tv, tablet, phone, bot, car or console</td>
     </tr>
 	<tr>
         <td>unknownUserAgentDeviceType</td>
         <td>string</td>
         <td>Device type to be returned whenever the user-agent is unknown. Defaults to phone.</td>
-        <td>desktop, tv, tablet, phone, bot or car</td>
+        <td>desktop, tv, tablet, phone, bot, car or console</td>
     </tr>
     <tr>
         <td>botUserAgentDeviceType</td>
         <td>string</td>
         <td>Device type to be returned whenever the user-agent belongs to a bot. Defaults to bot.</td>
-        <td>desktop, tv, tablet, phone, bot or car</td>
+        <td>desktop, tv, tablet, phone, bot, car or console</td>
     </tr>
     <tr>
         <td>carUserAgentDeviceType</td>
         <td>string</td>
         <td>Device type to be returned whenever the user-agent belongs to a car. Defaults to car.</td>
-        <td>desktop, tv, tablet, phone, bot or car</td>
+        <td>desktop, tv, tablet, phone, bot, car or console</td>
+    </tr>
+    <tr>
+        <td>consoleUserAgentDeviceType</td>
+        <td>string</td>
+        <td>Device type to be returned whenever the user-agent belongs to a console. Defaults to tv.</td>
+        <td>desktop, tv, tablet, phone, bot, car or console</td>
+    </tr>
+    <tr>
+        <td>tvUserAgentDeviceType</td>
+        <td>string</td>
+        <td>Device type to be returned whenever the user-agent belongs to a tv. Defaults to tv.</td>
+        <td>desktop, tv, tablet, phone, bot, car or console</td>
     </tr>
     <tr>
         <td>parseUserAgent</td>
@@ -91,12 +103,15 @@ Some contributed in the [express-device](https://github.com/rguerreiro/express-d
 - [@lennym](https://github.com/lennym)
 - [@martincad](https://github.com/martincad)
 - [@mettin](https://github.com/mettin)
+- [@cliftonc](https://github.com/cliftonc)
+- [@BorePlusPlus](https://github.com/BorePlusPlus)
+- [@Minaru](https://github.com/Minaru)
 
 Special thanks to [@jimmybergman](https://github.com/jimmybergman) that allowed me to use his `device` package for this refactoring.
 
 ## where to go from here?
 
-Currently, `device` is on **version 0.3.4**. In order to add more features I'm asking anyone to contribute with some ideas. You can do it by making some feature requests on the issues panel, but I prefer that you make your contribution with some pull requests ;)
+Currently, `device` is on **version 0.3.8**. In order to add more features I'm asking anyone to contribute with some ideas. You can do it by making some feature requests on the issues panel, but I prefer that you make your contribution with some pull requests ;)
 
 ## license
 
