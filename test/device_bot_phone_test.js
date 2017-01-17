@@ -1,7 +1,7 @@
 var device = require('../lib/device.js'),
     assert = require('assert');
 
-describe('device', function() {    
+describe('device', function() {
     describe('1.Accoona-AI-Agent 1.1.2',function(){
         it('should get device type bot', function(){
             var mydevice = device('Accoona-AI-Agent/1.1.2');
@@ -471,6 +471,12 @@ describe('device', function() {
             assert.equal(mydevice.type, 'bot');
         });
     });
+    describe('79.Samsung Evaliant', function () {
+        it('should get device type bot', function () {
+            var mydevice = device('Mozilla/5.0 (Linux; Android 6.1.1; SAMSUNG SM-G925F Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36 evaliant');
+            assert.equal(mydevice.type, 'bot');
+        });
+    })
     describe('Bot device type check with is method', function () {
         it('should get true', function () {
             var mydevice = device('Facebot');

@@ -2445,4 +2445,16 @@ describe('device', function() {
             assert.equal(mydevice.is('bot'), true);
         });
     });
+    describe('AdBeat Bot', function() {
+        it('should get true', function() {
+            var mydevice = device('Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) adbeat.com/policy Gecko/20100101 Firefox/44.0');
+            assert.equal(mydevice.is('bot'), true);
+        });
+    });
+    describe('Kantar Media Evaliant Bot', function() {
+        it('should get true', function() {
+            var mydevice = device('Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36 evaliant');
+            assert.equal(mydevice.is('bot'), true);
+        });
+    });
 });
